@@ -1,0 +1,117 @@
+/* Ensure the body and html take up full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Optional: for a better font appearance */
+}
+
+/* Overall body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/cdev_imge_bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;  /* Increased padding for more space */
+    width: 100%;
+    max-width: 400px; /* Limit the width */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures form elements are centered horizontally */
+}
+
+/* Input styling */
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;  /* Make the input box take 90% of the container width */
+    max-width: 350px; /* Ensure the input box doesn’t get too wide */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;  /* Ensure the button matches the input width */
+    max-width: 350px; /* Match the button width with the input */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.form-page {
+    display: none;
+}
+
+#welcome-message {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

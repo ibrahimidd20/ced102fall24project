@@ -1,0 +1,54 @@
+/* Overall body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/cdev_imge_bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    margin: 0;
+
+    /* Flexbox for centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the container (form box) */
+.container {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; /* Inner padding for spacing */
+    width: 90%; /* Width relative to viewport (responsive) */
+    max-width: 400px; /* Max width constraint */
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    text-align: center; /* Center align text inside */
+}
+
+/* Input field styling */
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%; /* Slightly narrower than container */
+    max-width: 350px; /* Max width for input fields */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%; /* Matches input width */
+    max-width: 350px; /* Matches input width */
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}

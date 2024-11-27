@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Development App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Message -->
+        <div id="welcome-message"></div>
+
+        <!-- Login Page -->
+        <div id="login-page" class="form-page">
+            <h1>LOGIN</h1>
+            <input type="text" id="login-identifier" placeholder="Username or Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Sign In</button>
+            <p><a href="#" onclick="showForgotPassword()">Forgot Password?</a></p>
+            <p><a href="#" onclick="showSignup()">Create an Account</a></p>
+        </div>
+
+        <!-- Signup Page -->
+        <div id="signup-page" class="form-page" style="display:none;">
+            <h1>Create an Account</h1>
+            <input type="text" id="signup-username" placeholder="Username" required>
+            <input type="text" id="signup-first-name" placeholder="First Name" required>
+            <input type="text" id="signup-last-name" placeholder="Last Name" required>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="text" id="signup-major" placeholder="Major" required>
+            <input type="text" id="signup-level" placeholder="Level (e.g., Freshman)" required>
+            
+            <select id="signup-security-question" required>
+                <option value="" disabled selected>Select a Security Question</option>
+                <option value="pet">What is your pet's name?</option>
+                <option value="mother-maiden">What is your mother's maiden name?</option>
+                <option value="school">What is the name of your first school?</option>
+                <option value="favorite-food">What is your favorite food?</option>
+            </select>
+
+            <input type="text" id="signup-security-answer" placeholder="Answer to Security Question" required>
+            <button onclick="signup()">Sign Up</button>
+            <p><a href="#" onclick="showLogin()">Already have an account? Sign In</a></p>
+        </div>
+
+        <!-- Reset Password Page -->
+        <div id="reset-password-page" class="form-page" style="display:none;">
+            <h1>Reset Password</h1>
+            <input type="email" id="reset-email" placeholder="Email" required>
+            <input type="text" id="reset-security-answer" placeholder="Answer to Security Question" required>
+            <input type="password" id="reset-new-password" placeholder="New Password" required>
+            <button onclick="resetPassword()">Reset Password</button>
+            <p><a href="#" onclick="showLogin()">Go back to Sign In</a></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
