@@ -68,6 +68,10 @@ body {
 }
 */
 
+h1, h2, h3, p, span, a {
+    color: white; /* Ensure headers, paragraphs, spans, and links are also white */
+}
+
 
 .container {
     width: 90%;
