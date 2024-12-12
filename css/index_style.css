@@ -1,0 +1,105 @@
+/* Ensure the body and html take up full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Optional: for a better font appearance */
+}
+
+/* Overall body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/cdev_img_bg1.jpg'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.welcome-container {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Input section styling */
+#input-section {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 350px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Remove bullet points and center the menu */
+ul {
+    list-style-type: none; /* Removes the default bullets */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    text-align: center; /* Centers the text */
+}
+
+/* Style each list item */
+ul li {
+    margin: 10px 0; /* Adds spacing between menu items */
+}
+
+/* Style links in the menu */
+ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets link color #4CAF50 */
+    font-size: 16px; /* Adjusts font size */
+    font-weight: bold; /* Makes the text bold */
+}
+
+ul li a:hover {
+    color: #45a049; /* Changes color on hover for a visual cue */
+}

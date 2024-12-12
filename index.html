@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>CED102 | Final Project</title>
+    <link rel="stylesheet" href="css/index_style.css">
+	<script src="js/script_index.js" defer></script>
+	<script src="js/script_logout.js" defer></script>
+</head>
+<body>
+    <div class="welcome-container">
+        <!-- Main heading -->
+        <h1>WELCOME TO MY CAREER DEVELOPMENT SITE</h1>
+        
+        <!-- Initial prompt asking for the user's name -->
+        <p id="prompt">What's your name?</p>
+        
+        <!-- Input section for the user to type their name -->
+        <div id="input-section">
+            <input type="text" id="username" placeholder="Enter your name">
+            <button onclick="showGreeting()">Submit</button>
+        </div>
+        
+        <!-- Placeholder for the personalized greeting -->
+        <p id="greeting"></p>
+        
+        <!-- Section displaying navigation menu options -->
+        <div id="menu-section" class="hidden">
+            <p>What would you like to check out first?</p>
+            <ul>
+                <!-- Menu links to different sections -->
+                <li><a href="career_planning.html">Career Planning</a></li>
+                <li><a href="job_searching.html">Job Searching</a></li>
+                <li><a href="skill_development.html">Skill Development</a>
+		<li><a href="ats_scanner_page.html">ATS Scanner</a>
+</li>
+            </ul>
+        </div>
+    </div>
+    <!-- External JavaScript file -->
+   <!-- <script src="js/app.js"></script> -->
+</body>
+</html>

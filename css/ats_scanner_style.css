@@ -1,0 +1,128 @@
+/* Ensure the body and html take up full height */
+
+body {
+    font-family: Arial, sans-serif;
+	background-image: url('../images/cdev_img_bg1.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a, .submenu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar a:hover, .submenu a:hover {
+    text-decoration: none; /*underline*/
+	color: #fff; /* Changes text color on hover */
+    background-color: #4CAF50; /* Adds a green background color on hover, this is blue #007bff */
+    padding: 3px; /* 5px, Adds some padding for a better hover effect */
+    border-radius: 3px; /* 5px, Rounds the corners of the background */
+}
+
+
+
+.submenu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+}
+
+.submenu a {
+    margin: 5px 0;
+}
+
+.dropdown:hover .submenu {
+    display: flex;
+}
+
+/*
+.welcome-message {
+    margin-top: 20px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+*/
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+/*
+h1 {
+    font-size: 24px;
+    color: #4CAF50; * Green color *
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+*/
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}

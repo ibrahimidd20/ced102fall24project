@@ -1,0 +1,133 @@
+
+/* STYLING THE BODY & BACKGROUND */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/cdev_img_bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* STYLING THE NAVIGATION */
+
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a, .submenu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar a:hover, .submenu a:hover {
+    text-decoration: none; /*underline*/
+	color: #fff; /* Changes text color on hover */
+    background-color: #4CAF50; /* Adds a green background color on hover, this is blue #007bff */
+    padding: 3px; /* 5px, Adds some padding for a better hover effect */
+    border-radius: 3px; /* 5px, Rounds the corners of the background */
+}
+
+
+.submenu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+}
+
+.submenu a {
+    margin: 5px 0;
+}
+
+.dropdown:hover .submenu {
+    display: flex;
+}
+
+/* STYLING THE WELCOME MESSAGE */
+
+.welcome-message {
+    margin-top: 20px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+}
+
+img#jobBoardImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* STYLING THE FOOTER SECTION */
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Career Planning</title>
+    <link rel="stylesheet" href="css/career_planning_style.css">
+	<script src="js/script_careerplan.js" defer></script>
+	<script src="js/script_logout.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="career_planning.html">Career Planning</a>
+            <div class="submenu">
+                <a href="job_searching.html">Job Searching</a>
+                <a href="skill_development.html">Skill Development</a>
+		<a href="ats_scanner_page.html">ATS Scanner</a>
+            </div>
+        </div>
+    <!--    <a href="settings.html">Settings</a> -->
+        <a href="index.html" onclick="confirmLogout()">Logout</a>
+    </div>
+
+    <div class="welcome-message">
+        Welcome to your Career Planning page!
+    </div>
+
+    <div class="container">
+        <!-- SMART Goals Section -->
+        <div class="section" id="smartGoals">
+            <h3>SMART Goals</h3>
+            <p>
+                SMART Goals are a powerful tool for setting clear and achievable objectives. SMART stands for:
+            </p>
+            <ul>
+                <li><strong>S</strong>pecific: Clearly define the goal.</li>
+                <li><strong>M</strong>easurable: Identify how you will measure success.</li>
+                <li><strong>A</strong>chievable: Ensure the goal is realistic.</li>
+                <li><strong>R</strong>elevant: Align the goal with your values and career aspirations.</li>
+                <li><strong>T</strong>ime-bound: Set a deadline for completion.</li>
+            </ul>
+            <p>
+                Example of a SMART goal: "I will update my resume by the end of this week and apply for 5 job positions by next Friday."
+            </p>
+        </div>
+
+        <!-- Career Readiness Section -->
+        <div class="section" id="careerReadiness">
+            <h3>Career Readiness</h3>
+            <p>
+                Career readiness is about developing the skills, knowledge, and attributes that employers are looking for. Key competencies include:
+            </p>
+            <ul>
+                <li><strong>Communication Skills:</strong> The ability to express ideas clearly and effectively.</li>
+                <li><strong>Critical Thinking:</strong> The ability to solve problems and make decisions.</li>
+                <li><strong>Adaptability:</strong> Being open to new ideas and able to handle change.</li>
+                <li><strong>Teamwork:</strong> The ability to work effectively in a team setting.</li>
+                <li><strong>Technical Skills:</strong> Proficiency in the tools and technology relevant to your field.</li>
+            </ul>
+            <p>
+                Building these competencies can increase your chances of landing and excelling in your desired career.
+            </p>
+        </div>
+
+        <!-- Career Planning Resources Section -->
+        <div class="section" id="careerResources">
+            <h3>Additional Career Planning Resources</h3>
+            <p>
+                Here are some important steps and resources for your career planning:
+            </p>
+            <ul>
+                <li><strong>Resume Building:</strong> A well-crafted resume is essential for standing out to employers. Consider using free online templates or visiting your career center for assistance.</li>
+                <li><strong>Networking:</strong> Building a professional network is crucial. Attend career fairs, join LinkedIn, and engage with industry professionals.</li>
+                <li><strong>Job Search Strategies:</strong> Use job boards, company websites, and networking to find opportunities. Tailor your applications to each job posting.</li>
+                <li><strong>Interview Preparation:</strong> Practice common interview questions, research the company, and ensure you communicate your skills and experience effectively.</li>
+                <li><strong>Skill Development:</strong> Keep learning. Consider online courses, certifications, and workshops to stay competitive in your field.</li>
+            </ul>
+			
+			<!-- 
+            <h4>Click below to view helpful resources:</h4>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="viewPDF('resources/resume_guidelines.pdf')">Resume Building Guidelines</a></li>
+                <li><a href="javascript:void(0);" onclick="viewPDF('resources/sn_sample_resume_template.pdf')">Sample Resume Template</a></li>
+				<li><a href="javascript:void(0);" onclick="viewPDF('resources/revised_cover_letter_tips.pdf')">Cover Letter Guidelines</a></li>
+				<li><a href="javascript:void(0);" onclick="viewPDF('resources/mastering_art_of_Interviewing_handout.pdf')">Mastering Interviews</a></li>
+                <li><a href="javascript:void(0);" onclick="viewPDF('resources/job-search-tips-1.pdf')">Job Search Tips #1</a></li>
+                <li><a href="javascript:void(0);" onclick="viewPDF('resources/interview_preparation.pdf')">Interview Preparation</a></li>
+            </ul>
+			
+			<h4>Click below to view helpful resources:</h4>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="viewPDF('resources/resume_guidelines.pdf')">Resume Building Guidelines</a></li>
+                <li><a href="javascript:void(0);" onclick="viewPDF('resources/sn_sample_resume_template.pdf')">Sample Resume Template</a></li>
+				<li><a href="javascript:void(0);" onclick="viewPDF('resources/revised_cover_letter_tips.pdf')">Cover Letter Guidelines</a></li>
+				<li><a href="javascript:void(0);" onclick="viewPDF('resources/mastering_art_of_Interviewing_handout.pdf')">Mastering Interviews</a></li>
+                <li><a href="javascript:void(0);" onclick="viewPDF('resources/job-search-tips-1.pdf')">Job Search Tips #2</a></li>
+                <li><a href="javascript:void(0);" onclick="viewPDF('resources/interview_preparation.pdf')">Interview Preparation</a></li>
+            </ul> 
+			
+			-->
+			
+			<div class="list-grid">
+				<div>
+					
+					<h4>Click below to view some helpful resources:</h4>
+					
+					<ul>
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/resume_guidelines.pdf')">Resume Building Guidelines</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/sn_sample_resume_template.pdf')">Sample Resume Template</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/revised_cover_letter_tips.pdf')">Cover Letter Guidelines</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/resume_guidelines.pdf')">Resume Guide - CUNY's Template</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/sn_sample_resume_template.pdf')">Sample Resume Template</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/revised_cover_letter_tips.pdf')">Cover Letter Guidelines</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4>Some more helpful resources:</h4>
+					<ul>
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/mastering_art_of_Interviewing_handout.pdf')">Mastering Interviews (Lehman CEDC)</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/job-search-tips-1.pdf')">Job Search Tips 1 (Fortune500 Recruiters - UDC.Edu)</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/interview-prep-packet.pdf')">Interview Preparation 1 (SouthmountainCC.edu)</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/mastering_art_of_Interviewing_handout.pdf')">Mastering Interviews</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/job-search-tips2.pdf')">Job Search Tips 2 (IECC.Edu/ Indeed)</a></li>
+						
+						<br />
+						
+						<li><a href="javascript:void(0);" onclick="viewPDF('resources/interview_preparation_guide.pdf')">Interview Preparation 2 (Princeton.Edu)</a></li>
+					</ul>
+				</div>
+			
+			</div>
+			
+				<h4>
+					Keep in mind specialized positions require personalized resumes. Download our resume templates but make adjustments based on the position you’re applying to.</h4>
+					
+					<!-- <br /> -->
+			
+				<h4>Note: Unless otherwise stated, all files provided above were provided for fair use, kind courtesy of the Fall 2024, CED 102 Class at Lehman College, and the City University of New York (CUNY)</h4>
+			
+			
+			<h3>Check out the videos below for some more tips on some of the helpful resources listed above:</h3>
+			
+			<!-- Video 1 -->
+			
+			<iframe width="857" height="482" src="https://www.youtube.com/embed/Tt08KmFfIYQ" title="Write an Incredible Resume: 5 Golden Rules!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+			<br /> 
+			<br />
+			
+			<h4>Note: the above video is the property of Youtube Channel Owner.</h4>
+			
+			<br /> 
+			<p></p>
+			<br />
+			
+			<!-- Video 2 -->
+			
+			<iframe width="857" height="482" src="https://www.youtube.com/embed/IW472-d_8bs" title="Here’s the BIGGEST Mistake Found on Resumes!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+			<br /> 
+			<br />
+			
+			<h4>Note: the above video is the property of Youtube Channel Owner.</h4>
+			
+			
+			<br /> 
+			<p></p>
+			<br />
+			
+			<!-- Video 3 -->
+			
+			<iframe width="857" height="482" src="https://www.youtube.com/embed/pjqi_M3SPwY" title="5 Resume Mistakes You MUST Avoid (with real examples)!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+			<br /> 
+			<br />
+			
+			<h4>Note: the above video is the property of Youtube Channel Owner.</h4>
+			
+			
+			<br /> 
+			<p></p>
+			<br />
+			
+			<!-- Video 4 -->
+			
+			<iframe width="857" height="482" src="https://www.youtube.com/embed/QnUI3sLZ4hc" title="How To Make a Resume For Students | Microsoft Word" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+			<br /> 
+			<br />
+			
+			<h4>Note: the above video is the property of Youtube Channel Owner.</h4>
+			
+			
+			<br /> 
+			<p></p>
+			<br />
+			
+			<!-- Video 5 -->
+			
+			<iframe width="857" height="482" src="https://www.youtube.com/embed/xudcyY06PiI" title="Why Your Cover Letter Gets Rejected (5 MISTAKES TO AVOID)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+			<br /> 
+			<br />
+			
+			<h4>Note: the above video is the property of Youtube Channel Owner.</h4>
+			
+			
+			<br /> 
+			<p></p>
+			<br />
+			
+			<!-- Video 6 -->
+			
+			<iframe width="857" height="482" src="https://www.youtube.com/embed/aLUVrrOktI8" title="How Harvard Teach Their Students To Write A Cover Letter | &amp; Harvard Cover Letter Examples*" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+			<br /> 
+			<br />
+			
+			<h4>Note: the above video is the property of Youtube Channel Owner.</h4>
+			
+			<br /> 
+			<p></p>
+			<br />
+			
+			<!-- Video 7 -->
+			
+			<iframe width="857" height="482" src="https://www.youtube.com/embed/wIjK-6Do6lg" title="5 Dangerous Things to Avoid Saying In a Job Interview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+			<br /> 
+			<br />
+			
+			<h4>Note: the above video is the property of Youtube Channel Owner.</h4>
+			
+        </div>
+		
+		
+
+        <!-- Lehman College Career Development Center -->
+        <div class="section" id="lehmanCareerCenter">
+            <h3>Lehman College Career Development Center</h3>
+            <p>
+                The Career Development Center at Lehman College provides resources and services to help students and alumni with career exploration, job search, resume building, cover letter writing, and more. 
+                If you need personalized assistance, they offer one-on-one career counseling to guide you through your career development journey.
+            </p>
+            <p>
+                To schedule an appointment or learn more about their services, visit <a href="https://www.lehman.edu/career-development/" target="_blank" style="color:#4CAF50;">Lehman College Career Development Center</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2024 Career Development App. All rights reserved.
+    </div>
+
+    <!-- PDF Popup -->
+    <div class="pdf-popup" id="pdfPopup">
+        <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+        <button onclick="closePDF()">Close</button>
+    </div>
+
+<!--
+    <script>
+        // Function to show PDF in popup
+        function viewPDF(pdfUrl) {
+            document.getElementById('pdfViewer').src = pdfUrl;
+            document.getElementById('pdfPopup').style.display = 'flex';
+        }
+
+        // Function to close PDF popup
+        function closePDF() {
+            document.getElementById('pdfPopup').style.display = 'none';
+            document.getElementById('pdfViewer').src = '';
+        }
+
+        // Logout Confirmation
+        function confirmLogout() {
+            if (confirm('Are you sure you want to log out?')) {
+                // Redirect to logout or perform logout actions here
+                window.location.href = 'index.html'; // Example logout redirection
+            }
+        }
+    </script> -->
+</body>
+</html>

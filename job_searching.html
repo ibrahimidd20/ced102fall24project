@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Job Searching</title>
+    <link rel="stylesheet" href="css/job_search_style.css">
+    <script src="js/script_jobsearch.js" defer></script>
+	<script src="js/script_logout.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="career_planning.html">Career Planning</a>
+            <div class="submenu">
+                <a href="job_searching.html">Job Searching</a>
+                <a href="skill_development.html">Skill Development</a>
+		<a href="ats_scanner_page.html">ATS Scanner</a>
+            </div>
+        </div>
+        <a href="index.html" onclick="confirmLogout()">Logout</a>
+    </div>
+
+    <div class="welcome-message">
+        Welcome to your Job Searching page!
+    </div>
+
+    <div class="container">
+        <!-- Job Search Section -->
+        <div class="section" id="jobSearchSection">
+            <h3>Search for Jobs</h3>
+            <p>
+                Choose a job board below to start searching for jobs. Once you select a platform, a search interface will appear to help you find job opportunities.
+            </p>
+
+            <!-- Job Board Dropdown -->
+            <select id="jobBoardSelect" onchange="loadJobBoard()">
+                <option value="">Select a Job Board</option>
+                <option value="ziprecruiter">Zip Recruiter</option>
+                <option value="monster">Monster</option>
+                <option value="indeed">Indeed</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="handshake">Handshake</option>
+            </select>
+
+            <!-- Job Board Link around the image -->
+            <a id="jobBoardLink" href="#" target="_blank" style="display:none;">
+                <img id="jobBoardImage" src="" alt="Job Board Preview" style="display:none;" width="100%" height="auto">
+            </a>
+
+            <!-- Job Board iframe (if needed for direct embed) -->
+            <iframe id="jobBoardIframe" src="" style="display:none;" width="100%" height="600px" border="none"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2024 Career Development App. All rights reserved.
+    </div>
+</body>
+</html>

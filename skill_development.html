@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Development Manager</title>
+    <link rel="stylesheet" href="css/skills_dev_style.css">
+    <script src="js/script_skillsdev.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="career_planning.html">Career Planning</a>
+            <div class="submenu">
+                <a href="job_searching.html">Job Searching</a>
+                <a href="skill_development.html">Skill Development</a>
+		<a href="ats_scanner_page.html">ATS Scanner</a>
+            </div>
+        </div>
+        <a href="index.html" id="logoutButton">Logout</a>
+    </div>
+
+    <div class="welcome-message">
+        Welcome to your Skill Development Page!
+    </div>
+
+    <div class="container">
+        <!-- User Information Section -->
+        <div class="section">
+            <h3>Enter Your Name</h3>
+            <input type="text" id="userName" placeholder="Enter your name" />
+        </div>
+
+        <!-- Add Skills Section -->
+        <div class="section">
+            <h3>Add and Manage Skills</h3>
+            <input type="text" id="new-skill-input" placeholder="Enter a new skill" />
+            <button id="add-skill-btn">Add Skill</button>
+            <div id="skill-list" class="skill-list"></div>
+        </div>
+
+        <!-- Download Report Section -->
+        <div class="section">
+            <button id="downloadReportBtn" disabled>Download Completed Skills Report</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Skill Development Manager. All rights reserved.
+    </div>
+</body>
+</html>

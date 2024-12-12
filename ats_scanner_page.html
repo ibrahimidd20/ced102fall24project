@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>ATS Resume Scanner</title>
+    <link rel="stylesheet" href="css/ats_scanner_style.css">
+ <!--   <link rel="java script" href="js/ats_scanner_script.js"> -->
+    <script src="script_ats_scanner.js"></script>
+	<script src="js/ats_scanner_script.js" defer></script>
+	<script src="js/script_logout.js" defer></script>
+	
+</head>
+<body>
+
+<div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="career_planning.html">Career Planning</a>
+            <div class="submenu">
+                <a href="job_searching.html">Job Searching</a>
+		<a href="ast_scanner_page.html">Free ATS Scanner</a>
+                <a href="skill_development.html">Skill Development</a>
+            </div>
+        </div>
+    <!--    <a href="settings.html">Settings</a> -->
+        <a href="index.html" onclick="confirmLogout()">Logout</a>
+    </div>
+	
+	 <div class="welcome-message">
+       <! -- Welcome to Free ATS Scanner Page! 
+    </div> 
+	
+    <div class="scanner-container">
+        <h1>ATS Resume Scanner</h1>
+        <p>Upload your resume to check if it is ATS ready.</p>
+        <form id="resume-form">
+            <input type="file" id="resume-input" accept=".txt, .pdf, .doc, .docx">
+            <button type="button" id="scan-button">Scan Resume</button>
+        </form>
+        <div id="popup" class="popup hidden">
+            <p id="popup-message"></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+<!--    <script src="script_ats_scanner.js"></script> -- >
+</body>
+</html>

@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/cdev_img_bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a, .submenu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar a:hover, .submenu a:hover {
+    text-decoration: none; /*underline*/
+	color: #fff; /* Changes text color on hover */
+    background-color: #4CAF50; /* Adds a green background color on hover, this is blue #007bff */
+    padding: 3px; /* 5px, Adds some padding for a better hover effect */
+    border-radius: 3px; /* 5px, Rounds the corners of the background */
+}
+
+
+
+.submenu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+}
+
+.submenu a {
+    margin: 5px 0;
+}
+
+.dropdown:hover .submenu {
+    display: flex;
+}
+
+.welcome-message {
+    margin-top: 20px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #4CAF50; /* Green color */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+/* Popup PDF Viewer */
+.pdf-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-popup iframe {
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+
+.pdf-popup button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Default text color */
+    transition: color 0.3s, background-color 0.3s; /* Adds smooth transition */
+}
+
+ul li a:hover {
+    color: #fff; /* Changes text color on hover */
+    background-color: #4CAF50; /* Adds a green background color on hover, this is blue #007bff */
+    padding: 5px; /* Adds some padding for a better hover effect */
+    border-radius: 5px; /* Rounds the corners of the background */
+}
+
+.list-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Spacing between the columns */
+}
